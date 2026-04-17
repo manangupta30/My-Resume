@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manan Gupta | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+header h1 {
+    font-size: 2.8rem;
+    background: linear-gradient(90deg, #38bdf8, #6366f1);
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #cbd5f5;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 25px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        section:hover {
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #38bdf8;
+            border-bottom: 2px solid #38bdf8;
+            display: inline-block;
+        }
+
+        .about {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 180px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .about img:hover {
+            transform: scale(1.05);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills-list li {
+            list-style: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background: rgba(56,189,248,0.2);
+            transition: 0.3s;
+        }
+
+        .skills-list li:hover {
+            background: rgba(56,189,248,0.4);
+            transform: scale(1.05);
+        }
+
+        .projects li {
+            background: rgba(255,255,255,0.05);
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .projects li:hover {
+            transform: translateY(-5px);
+        }
+
+        a {
+            color: #38bdf8;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: rgba(56,189,248,0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Manan Gupta</h1>
+    <p id="typing"></p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#edu">Education</a></li>
+        <li><a href="#skl">Skills</a></li>
+        <li><a href="#ach">Achievements</a></li>
+        <li><a href="#pro">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+        <img src="myphoto.jpg" alt="Profile Picture">
+        <p>
+            I am a B.Tech IT student at NIT Jalandhar with a strong interest in software development 
+            and problem solving.
+
+            <br><br>
+
+            Currently, I am focusing on Data Structures, Java, and Web Development. 
+            I enjoy building projects and continuously improving my technical skills.
+
+            <br><br>
+
+            My goal is to become a skilled software engineer and work on impactful real-world applications.
+        </p>
+    </div>
+</section>
+
+<section id="edu">
+    <h2>Education</h2>
+    <ol>
+        <li>High School (2022) – 97%</li>
+        <li>Senior Secondary (2024) – 93%</li>
+        <li>B.Tech IT – NIT Jalandhar (Expected 2029)</li>
+    </ol>
+</section>
+
+<section id="skl">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li>Java</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+    </ul>
+</section>
+
+<section id="ach">
+    <h2>Achievements</h2>
+    <ul>
+        <li>🎓 Strong academic performance in school</li>
+        <li>💻 Actively learning DSA and Web Development</li>
+    </ul>
+</section>
+
+<section id="pro" class="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio built using HTML, CSS, and JavaScript.</p>
+        </li>
+
+        <li>
+            <h3>Java Projects</h3>
+            <p>Practiced multiple Java programs including OOP concepts.</p>
+        </li>
+    </ul>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>
+        📞 <a href="tel:8920677617">Telephone</a><br>
+        📧 <a href="mailto:manang.it.25@nitj.ac.in">Gmail</a><br>
+        🔗 <a href="https://www.linkedin.com/in/manan-gupta-01950536a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a><br>
+        💻 <a href="https://github.com/manangupta30">GitHub</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Manan Gupta</p>
+</footer>
+
+<script>
+const text = "Software Developer | Web Developer";
+let i = 0;
+
+function typing() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 50);
+    }
+}
+typing();
+</script>
+
+</body>
+</html>
